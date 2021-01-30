@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- flickity  -->
+    <link rel="stylesheet" href="node_modules/flickity/dist/flickity.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Room homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <div class="leftside">
+        <nav class="navbar">
+          <div class="navbar__brand"><h5>room</h5></div>
+          <div class="navbar__nav">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">shop</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">about</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+
+        <div
+          class="carousel"
+          data-flickity='{ "fullscreen": true, "lazyLoad": 1, "autoPlay": 5000, "prevNextButtons": false, "pageDots":false
+        }'
+        >
+          <div class="carousel__cell">
+            <img
+              data-flickity-lazyload-srcset="images/desktop-image-hero-1.jpg 720w,
+              mobile-image-hero-1 360w"
+              sizes="(min-width: 900px) 720px, 440px"
+            />
+          </div>
+          <div class="carousel__cell">
+            <img
+              data-flickity-lazyload-srcset="images/desktop-image-hero-2.jpg 720w,
+            mobile-image-hero-2 360w"
+              sizes="(min-width: 900px) 720px, 440px"
+            />
+          </div>
+          <div class="carousel__cell">
+            <img
+              data-flickity-lazyload-srcset="images/desktop-image-hero-3.jpg
+            720w, mobile-image-hero-3 360w"
+              sizes="(min-width: 900px) 720px, 440px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="rightside">
+        <div
+          class="carousel"
+          data-flickity='{  "lazyLoad": 1, "autoPlay": 13000 }'
+        >
+          <div class="carousel__cell">
+            <h1 class="rightside__header">
+              Discover innovative ways to decorate
+            </h1>
+            <p class="rightside__paragraph">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <a href="#" class="btn">Shop now &LongRightArrow; </a>
+          </div>
+          <div class="carousel__cell">
+            <h1 class="rightside__header">
+              We are available all across the globe
+            </h1>
+            <p class="rightside__paragraph">
+              With stores all over the world, it's easy for you to find
+              furniture for your home or place of business. Locally, we’re in
+              most major cities throughout the country. Find the branch nearest
+              you using our store locator. Any questions? Don't hesitate to
+              contact us today.
+            </p>
+            <a href="#" class="btn">Shop now &LongRightArrow; </a>
+          </div>
+          <div class="carousel__cell">
+            <h1 class="rightside__header">Manifactured with best materials</h1>
+            <p class="rightside__paragraph">
+              Our modern furniture store provide a high level of quality. Our
+              company has invested in advanced technology to ensure that every
+              product is made as perfect and as consistent as possible. With
+              three decades of experience in this industry, we understand what
+              customers want for their home and office.
+            </p>
+            <a href="#" class="btn">Shop now &LongRightArrow; </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <img
+            src="images/image-about-dark.jpg"
+            alt=""
+            class="container__img"
+          />
+        </div>
+        <div class="container container__text">
+          <h1 class="container__header">About our furniture</h1>
+          <p class="container__paragraph">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <div class="container">
+          <img
+            src="images/image-about-light.jpg"
+            alt=""
+            class="container__img"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
+<!-- 
+  Home
+  Shop
+  About
+  Contact
+
+  Discover innovative ways to decorate
+
+  
+
+  Shop now
+
+  We are available all across the globe
+
+  
+
+  Shop now
+
+  Manufactured with the best materials
+
+  
+
+  Shop now
+
+  About our furniture
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.  -->
