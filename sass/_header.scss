@@ -213,6 +213,7 @@ header {
 
 //burger menu mob
 .burger {
+  display: none;
   cursor: pointer;
   z-index: 100;
   div {
@@ -229,6 +230,9 @@ header {
 @media only screen and (max-width: 768px) {
   body {
     overflow-y: hidden;
+  }
+  .burger {
+    display: block;
   }
 
   .navbar__nav {
