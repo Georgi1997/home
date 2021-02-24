@@ -32,9 +32,6 @@ header {
     width: 100%;
     justify-content: space-between;
   }
-  .carousel__cell {
-    counter-increment: gallery-cell;
-  }
 
   &__nav {
     width: 40%;
@@ -97,6 +94,15 @@ header {
   width: 50%;
   @media only screen and (max-width: 500px) {
     width: 100%;
+  }
+
+  .carousel__cell {
+    width: 100%;
+    counter-increment: gallery-cell;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -211,7 +217,7 @@ header {
   }
 }
 
-//burger menu mob
+//  menu mob
 .burger {
   display: none;
   cursor: pointer;

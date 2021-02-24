@@ -45,8 +45,6 @@ header {
       justify-content: center;
       width: 100%;
       justify-content: space-between; } }
-  .navbar .carousel__cell {
-    counter-increment: gallery-cell; }
   .navbar__nav {
     width: 40%; }
     @media only screen and (max-width: 768px) {
@@ -90,6 +88,11 @@ header {
   @media only screen and (max-width: 500px) {
     .leftside {
       width: 100%; } }
+  .leftside .carousel__cell {
+    width: 100%;
+    counter-increment: gallery-cell; }
+    .leftside .carousel__cell img {
+      width: 100%; }
 
 .rightside {
   position: relative;
